@@ -1,0 +1,12 @@
+region                  = "us-east-1"
+access_key              = "AKIA2WFDHFA5C5FJLDNS"
+secret_key              = "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"
+ami_owners              = ["099720109477"]
+ami_name                = ["ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-*"]
+ami_virtualization_type = ["hvm"]
+root_device_type        = ["ebs"]
+key_name                = "tf-key"
+securitygroupName       = "securitygroupTF"
+instance_type           = "t2.micro"
+instance_name           = "instanceTF"
+ingress_ports           = [22, 80]
