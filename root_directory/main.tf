@@ -88,7 +88,7 @@ resource "aws_instance" "web" {
 
 
   provisioner "file" {
-    content     = file("script.sh")
+    source     = file("script.sh")
     destination = "/tmp/script.sh"
   }
 
