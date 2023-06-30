@@ -82,13 +82,13 @@ resource "aws_instance" "web" {
   connection {
     type        = "ssh"
     user        = "ubuntu"
-    private_key = file("${path.module}/id_rsa")
+    private_key = file("id_rsa")
     host        = self.public_ip
   }
 
 
   provisioner "file" {
-    content     = file("${path.module}/script.sh")
+    content     = file("script.sh")
     destination = "/tmp/script.sh"
   }
 
